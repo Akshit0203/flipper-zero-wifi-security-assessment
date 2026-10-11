@@ -1,0 +1,42 @@
+# ─── Sensitive capture & crack artifacts — NEVER commit ───────────────
+# Raw wireless captures
+*.pcap
+*.pcapng
+*.cap
+*.hccap
+*.hccapx
+
+# hashcat hash files, potfiles & recovered keys
+*.22000
+*.16800
+*.potfile
+hashcat.potfile
+*.restore
+cracked*.txt
+recovered*.txt
+
+# Wordlists / dictionaries (large and/or sensitive)
+*.lst
+wordlist*.txt
+rockyou*.txt
+
+# Marauder / device logs that may contain real network data
+*.log
+apps_data/
+
+# ─── OS / editor cruft ────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.vscode/
+.idea/
+
+# ─── Obsidian vault metadata (if exported from a vault) ───────────────
+.obsidian/
+
+# ─── Large media not suitable for Git (host externally) ───────────────
+*.mp4
+*.mov
+*.avi
